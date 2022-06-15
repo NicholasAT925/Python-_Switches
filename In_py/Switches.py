@@ -1,7 +1,11 @@
 Days = []
 Days2 = []
+Day3 = []
 Options = [1,2,3,4,5,6,7,100]
+Options2 = [1,2,3,4,5,6,7]
 # Dictionary
+
+# STARTING INSTRUCTIONS
 DaysOfWeek = {
     1: "Monday",
     2: "Tuesday",
@@ -14,19 +18,12 @@ DaysOfWeek = {
 print("Enter the Days of the week using Digits")
 for day in DaysOfWeek:
     print(f"{day} : {DaysOfWeek[day]}")
-# print("1: Monday")
-# print("2: Tuesday")
-# print("3: Wednesday")
-# print("4: Thursda")
-# print("5: Friday")
-# print("6: Saturday")
-# print("7: Sunday")
 print("Enter 100 if you are done")
 
-# I will do This using Match switch Method and Dict Mapping Method
 
 # MATCH SWITCH METHOD
-# MACHINE 1 #
+# MACHINE 1 
+print("\n\n")
 print("Machine 1")
 while True:
     Chosen = int(input("Enter Your choosen Day: "))
@@ -52,18 +49,12 @@ while True:
         print("Incorrect Input Try the following")
         for day in DaysOfWeek:
             print(f"{day} : {DaysOfWeek[day]}")
-        # print("1: Monday")
-        # print("2: Tuesday")
-        # print("3: Wednesday")
-        # print("4: Thursda")
-        # print("5: Friday")
-        # print("6: Saturday")
-        # print("7: Sunday")
         print("Enter 100 if you are done")
 print(f"Your chosen days are {Days}")
 
+
 # DICT MAPPING METHOD with if, elif and else
-# MACHINE 2 #
+# MACHINE 2 
 def monday():
     Days2.append("Monday")
     return 0
@@ -111,6 +102,7 @@ switcher = {
 def switch(ChosenDay):
     return switcher.get(ChosenDay)()
 
+print("\n\n")
 print("Machine 2")
 while True:
     Chosen = int(input("Enter Your choosen Day: "))
@@ -138,3 +130,21 @@ print(f"Your Chosen Days are {Days2}")
 # while process wise the 'match-case' method is the same with just writing a bunch of 'if', 'elif' and 'else'
 # It is much more simpler to write and do compare to other methods like the 'Dict Mapping' method
 # You have to write more lines of code for other method compare to the 'match-case' method
+
+
+# MACHINE 3
+print("\n\n")
+print("Machine 3")
+while True:
+    Chosen = int(input("Enter Your choosen Day: "))
+    if Chosen in Options2:
+        chosen_Day = DaysOfWeek[Chosen]
+        Day3.append(chosen_Day)
+    elif Chosen == 100:
+        break
+    else:
+        print("Incorrect Input Try the following")
+        for day in DaysOfWeek:
+            print(f"{day} : {DaysOfWeek[day]}")
+        print("Enter 100 if you are done")
+print(f"Your Chosen Days are {Day3}")
