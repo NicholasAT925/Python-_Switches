@@ -23,6 +23,7 @@ print("Enter 100 if you are done")
 # I will do This using Match switch Method and Dict Mapping Method
 
 # MATCH SWITCH METHOD
+# MACHINE 1 #
 print("Machine 1")
 while True:
     Chosen = int(input("Enter Your choosen Day: "))
@@ -57,6 +58,7 @@ while True:
 print(f"Your chosen days are {Days}")
 
 # DICT MAPPING METHOD with if, elif and else
+# MACHINE 2 #
 def monday():
     Days2.append("Monday")
     return 0
