@@ -1,6 +1,7 @@
 Days = []
 Days2 = []
 Options = [1,2,3,4,5,6,7,100]
+# Dictionary
 DaysOfWeek = {
     1: "Monday",
     2: "Tuesday",
@@ -11,13 +12,15 @@ DaysOfWeek = {
     7: "Sunday"
     }
 print("Enter the Days of the week using Digits")
-print("1: Monday")
-print("2: Tuesday")
-print("3: Wednesday")
-print("4: Thursda")
-print("5: Friday")
-print("6: Saturday")
-print("7: Sunday")
+for day in DaysOfWeek:
+    print(day, ':', DaysOfWeek[day])
+# print("1: Monday")
+# print("2: Tuesday")
+# print("3: Wednesday")
+# print("4: Thursda")
+# print("5: Friday")
+# print("6: Saturday")
+# print("7: Sunday")
 print("Enter 100 if you are done")
 
 # I will do This using Match switch Method and Dict Mapping Method
@@ -47,13 +50,15 @@ while True:
                 break
     else:
         print("Incorrect Input Try the following")
-        print("1: Monday")
-        print("2: Tuesday")
-        print("3: Wednesday")
-        print("4: Thursda")
-        print("5: Friday")
-        print("6: Saturday")
-        print("7: Sunday")
+        for day in DaysOfWeek:
+            print(day, ':', DaysOfWeek[day])
+        # print("1: Monday")
+        # print("2: Tuesday")
+        # print("3: Wednesday")
+        # print("4: Thursda")
+        # print("5: Friday")
+        # print("6: Saturday")
+        # print("7: Sunday")
         print("Enter 100 if you are done")
 print(f"Your chosen days are {Days}")
 
@@ -82,13 +87,15 @@ def sunday():
     return 0
 def wrong():
     print("Incorrect Input Try the following")
-    print("1: Monday")
-    print("2: Tuesday")
-    print("3: Wednesday")
-    print("4: Thursda")
-    print("5: Friday")
-    print("6: Saturday")
-    print("7: Sunday")
+    for day in DaysOfWeek:
+        print(day, ':', DaysOfWeek[day])
+    # print("1: Monday")
+    # print("2: Tuesday")
+    # print("3: Wednesday")
+    # print("4: Thursda")
+    # print("5: Friday")
+    # print("6: Saturday")
+    # print("7: Sunday")
     print("Enter 100 if you are done")
     return 0
 switcher = {
