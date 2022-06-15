@@ -13,7 +13,7 @@ DaysOfWeek = {
     }
 print("Enter the Days of the week using Digits")
 for day in DaysOfWeek:
-    print(day, ':', DaysOfWeek[day])
+    print(f"{day} : {DaysOfWeek[day]}")
 # print("1: Monday")
 # print("2: Tuesday")
 # print("3: Wednesday")
@@ -51,7 +51,7 @@ while True:
     else:
         print("Incorrect Input Try the following")
         for day in DaysOfWeek:
-            print(day, ':', DaysOfWeek[day])
+            print(f"{day} : {DaysOfWeek[day]}")
         # print("1: Monday")
         # print("2: Tuesday")
         # print("3: Wednesday")
@@ -88,7 +88,7 @@ def sunday():
 def wrong():
     print("Incorrect Input Try the following")
     for day in DaysOfWeek:
-        print(day, ':', DaysOfWeek[day])
+        print(f"{day} : {DaysOfWeek[day]}")
     # print("1: Monday")
     # print("2: Tuesday")
     # print("3: Wednesday")
